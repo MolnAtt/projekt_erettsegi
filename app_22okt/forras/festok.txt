@@ -1,0 +1,26 @@
+azon	nev	szuletett	meghalt
+103	Thorma János	1870	1937
+107	Hollósy Simon	1857	1918
+111	Ferenczy Károly	1862	1917
+115	Iványi Grünwald Béla	1867	1940
+119	Réti István	1872	1945
+121	Balla Béla	1882	1965
+124	Bernáth Aurél	1895	1982
+127	Boldizsár István	1897	1984
+130	Boromissza Tibor	1880	1960
+133	Börtsök Samu	1881	1931
+135	Orbán Dezső	1884	1986
+137	Jándi Dávid	1893	1944
+140	Kádár Géza	1878	1952
+143	Kmetty János	1889	1975
+145	Krizsán János	1886	1948
+149	Mikola András	1884	1970
+151	Mund Hugó	1892	1961
+155	Nagy Oszkár	1893	1965
+157	Pirk János	1903	1989
+160	Pászk Jenő	1895	1948
+163	Perlrott Csaba Vilmos	1880	1955
+165	Pittner Olivér	1911	1971
+167	Szőnyi István	1894	1960
+169	Zsögödi Nagy Imre	1893	1976
+172	Ziffer Sándor	1880	1962

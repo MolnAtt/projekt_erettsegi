@@ -1,0 +1,51 @@
+leltar	fazon	cim	keszult	anyag	technika	szeles	magas
+2004.9.1.	103	Berki Antal és felesége portréja	1895	vászon	olaj	150	125
+2003.39.1.	103	Cseresznyeszedés	1929	vászon	olaj	70	80
+2005.19.1.	103	A nagybányai köszöntő ember	1928	vászon	olaj	56,5	68
+2010.6.1.	103	Falusi asszonyok (Cigányutca)	1907	vászon	olaj	85,5	109
+2017.6.10.	103	Hazatérő	1912	vászon	olaj	80	94
+2017.6.12.	103	Virágzó almafa (Príma impresszió)	1929	fa	olaj	67,5	56
+2017.6.13.	103	Fürdőzők	1933	vászon	olaj	150	119
+2017.6.15.	103	Tavaszi szántás	1930	vászon	olaj	120	100
+2017.6.16.	103	Napraforgós csendélet	1907	vászon	olaj	63,5	79
+2017.6.17.	103	Párizsi lány	1907	vászon	olaj	32,5	38
+2017.6.19.	107	Az apostol	1903	vászon	olaj	79,5	58
+2017.6.20.	111	Borús táj fürdőző férfival	1913	vászon	olaj	85,5	71
+2017.6.21.	111	Pieta	1916	vászon	olaj	116	86,5
+2017.6.22.	111	Női akt zöld háttérrel	1910	vászon	olaj	140,2	119
+2017.6.23.	115	Cigánylányok a Zazar-parton	1910	vászon	olaj	80	59,5
+2017.6.24.	115	Téli táj	1900	vászon	olaj	103	80
+2017.6.25.	119	Ősz a völgyben	1898	vászon	olaj	96	103
+2017.6.26.	119	Olvasó nő lámpánál	1895	fa	olaj	56,5	67
+2017.6.27.	121	Udvaron	1908	karton	olaj	38	305
+2017.6.28.	124	Nagybányai piactér	1916	vászon	olaj	56,5	49,5
+2017.6.29.	127	Almaszedők	1930	fa	olaj	54	47,5
+2017.6.3.	103	Fürdés után	1928	vászon	olaj	101	80,5
+2017.6.30.	130	Szénavásár Nagybányán	1912	vászon	olaj	70,5	50,2
+2017.6.31.	133	A Kereszthegy télen	1907	vászon	olaj	92	73
+2017.6.33.	135	Folyóparti dombok	1920	fa	olaj	30	24,5
+2017.6.35.	137	Táj házakkal	1929	vászon	olaj	64,5	50,5
+2017.6.36.	140	Nagybánya	1911	vászon	olaj	79	71
+2017.6.39.	143	A nagybányai református templom	1930	vászon	olaj	46	38
+2017.6.40.	145	Virághegy	1920	vászon	olaj	74	73,5
+2017.6.43	149	Nagybányai főtér	1906	vászon	olaj	102,5	75
+2017.6.44.	151	Nagybányai főtér	1920	vászon	olaj	100	70
+2017.6.45.	151	Lápospart	1927	vászon	olaj	66,5	54,5
+2017.6.46.	155	A Nagypénzverő utca	1929	fa	olaj	100	69,5
+2017.6.47.	157	Kert virágokkal	1944	papír	olaj	43,5	46
+2017.6.48.	160	Erdő belseje	1943	vászon	olaj	99,5	69,5
+2017.6.49.	163	Ruhateregetők	1905	vászon	olaj	121	110
+2017.6.50.	165	Munkások	1935	fa	olaj	69,5	89,5
+2017.6.55.	167	Napsütötte udvar	1926	vászon	olaj	55	68
+2017.6.56.	169	Dombos táj	1926	vászon	olaj	65,5	60,5
+2017.6.57.	172	Veresvíz télen	1920	vászon	olaj	128	95
+2017.6.58.	172	Nyár a libamezőn	1926	vászon	olaj	65,5	98,5
+2017.6.59.	172	Lányok a nagybányai téren	1942	vászon	olaj	99,5	77,5
+2017.6.60.	145	Festőnő	1910	vászon	olaj	28	23,8
+2017.6.8.	103	Tavasz	1915	vászon	olaj	60	75
+2018.1.1.	103	Bálint a nagybányai dalos ember	1928	fa	olaj	49,5	69
+62.62.1.	103	Gesztenyés	1926	vászon	olaj	94	74
+68.1.1.	103	Festőnő	1934	vászon	olaj	100	80
+68.1.2.	103	Birsalmaszedés	1929	vászon	olaj	69	56
+70.24.1.	103	Domboldal	1934	vászon	olaj	99	92
+70.24.2.	103	Húsvéti kenyérszentelés	1910	vászon	tempera	175	130
