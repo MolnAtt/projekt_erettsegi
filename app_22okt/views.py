@@ -38,3 +38,4 @@ def feltolt_post(request, tabla):
             return HttpResponseServerError(f'{db} db sort fel tudtunk dolgozni, de: '+ error)
         ossz = Kep.objects.all().count()
     return HttpResponse(f'Sikerült a feltöltés a {tabla} táblába, {db} új adat jött létre. A többi már létezett korábban is. Így most {ossz} db adat van összesen.')
+
