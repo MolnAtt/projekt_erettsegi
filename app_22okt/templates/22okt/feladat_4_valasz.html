@@ -10,17 +10,15 @@
 </head>
 <body>
     <p>
-        A következő festők éltek a megadott {{ ev }} évben:
+        A következő képekben tűnik fel a "{{ karaktersorozat }}" karaktersorozat: 
     </p>
     <table>
         <tr>
-            <th>Név</th>
-            <th>Élt</th>
+            <th>Képcímek</th>
         </tr>
-        {% for festo in festok %}
+        {% for kep in kepek %}
         <tr>
-            <td>{{ festo.nev }}</td>
-            <td>{{ festo.szuletett }}-{{ festo.meghalt }}</td>
+            <td>{{ kep.cim }}</td>
         </tr>
         {% endfor %}
     </table>

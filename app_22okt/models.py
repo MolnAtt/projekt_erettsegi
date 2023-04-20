@@ -114,3 +114,16 @@ class Kep(models.Model):
         
         error = None
         return db, error
+
+    def melyik_evben_hany_kep_keszult():
+        szotar = {}
+        for kep in Kep.objects.all():
+            if kep.keszult in szotar.keys():
+                szotar[kep.keszult] += 1
+            else:
+                szotar[kep.keszult] = 1
+        
+        return [{'ev': ev, 'db': szotar[ev]} for ev in szotar.keys()] 
+        
+    
+    

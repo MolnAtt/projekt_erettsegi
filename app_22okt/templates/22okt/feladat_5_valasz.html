@@ -10,19 +10,7 @@
 </head>
 <body>
     <p>
-        A következő festők éltek a megadott {{ ev }} évben:
+        A legmagasabb kép a <strong>{{ legmagasabb_kep.cim }}</strong>, aminek magassága {{ legmagasabb_kep.magas }}, ezt pedig {{ legmagasabb_kep.festo }} festő készítette. 
     </p>
-    <table>
-        <tr>
-            <th>Név</th>
-            <th>Élt</th>
-        </tr>
-        {% for festo in festok %}
-        <tr>
-            <td>{{ festo.nev }}</td>
-            <td>{{ festo.szuletett }}-{{ festo.meghalt }}</td>
-        </tr>
-        {% endfor %}
-    </table>
 </body>
 </html>

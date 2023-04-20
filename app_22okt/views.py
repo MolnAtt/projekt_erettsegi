@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound, HttpResponseServerError
 from .models import Festo, Kep
+from re import search
 
 # a views.py-ban az áll, ahogy a szerver kommunikál a felhasználóval. 
 # fontos, hogy a programozási részletek nem itt vannak. 
@@ -42,12 +43,16 @@ def feltolt_post(request, tabla):
 def index(request):
     return render(request, '22okt/index.html')
 
-def feladat_2_get(request):
-    template = '22okt/feladat_2_kerdes.html'
+####################
+## 2. feladat
+##################
 
+def feladat_2_kerdes(request):
     evszamok = [ festo.szuletett for festo in Festo.objects.all()] + [ festo.meghalt for festo in Festo.objects.all()]
     ettol = min(evszamok)
     eddig = max(evszamok)
+    
+    template = '22okt/feladat_2_kerdes.html'
     context = {
         'ettol': ettol,
         'eddig': eddig,
@@ -55,7 +60,7 @@ def feladat_2_get(request):
 
     return render(request, template, context)
 
-def feladat_2_post(request):
+def feladat_2_valasz(request):
     if request.method!='POST':
         return redirect('/2022/okt/')
     
@@ -65,6 +70,7 @@ def feladat_2_post(request):
         return HttpResponseServerError('az év nem szám.')
     
     festok = [festo for festo in Festo.objects.all() if festo.szuletett <= ev and ev <= festo.meghalt]
+    
     template = '22okt/feladat_2_valasz.html'
     context = {
         'ev': ev,
@@ -72,16 +78,20 @@ def feladat_2_post(request):
     }
     return render(request, template, context)
 
+####################
+## 3. feladat
+##################
 
-def feladat_3_get(request):
-    template = '22okt/feladat_3_kerdes.html'
+def feladat_3_kerdes(request):
     technikak = {kep.technika for kep in Kep.objects.all()}
+    
+    template = '22okt/feladat_3_kerdes.html'
     context = {
         'technikak':technikak,
     }
     return render(request, template, context)
 
-def feladat_3_post(request):
+def feladat_3_valasz(request):
     if request.method!='POST':
         return redirect('/2022/okt/')
 
@@ -94,35 +104,51 @@ def feladat_3_post(request):
     }
     return render(request, template, context)
 
-def feladat_4_get(request):
-    template = '22okt/feladat_4.html'
-    context = {}
+####################
+## 4. feladat
+##################
+
+
+def feladat_4_kerdes(request):    
+    return render(request, '22okt/feladat_4_kerdes.html')
+
+def feladat_4_valasz(request):
+    if request.method!='POST':
+        return redirect('/2022/okt/')
+    
+    karaktersorozat = request.POST['karaktersorozat']    
+    kepek = [kep for kep in Kep.objects.all() if search(r'^.*' + karaktersorozat + r'.*$', kep.cim)]
+    
+    template = '22okt/feladat_4_valasz.html'
+    context = {
+        'karaktersorozat': karaktersorozat,
+        'kepek': kepek,
+    }
     return render(request, template, context)
 
+####################
+## 5. feladat
+##################
 
-def feladat_5_get(request):
-    template = '22okt/feladat_5.html'
-    context = {}
+def feladat_5_valasz(request):
+    template = '22okt/feladat_5_valasz.html'    
+    maxmagassag = max(kep.magas for kep in Kep.objects.all())
+    legmagasabb_kep = Kep.objects.get(magas=maxmagassag)
+    context = {
+        'legmagasabb_kep': legmagasabb_kep,
+    }
     return render(request, template, context)
 
-def feladat_6_get(request):
-    template = '22okt/feladat_6.html'
-    context = {}
-    return render(request, template, context)
+####################
+## 6. feladat
+##################
 
-
-
-def feladat_4_post(request):
-    template = '22okt/feladat_4.html'
-    context = {}
-    return render(request, template, context)
-
-def feladat_5_post(request):
-    template = '22okt/feladat_5.html'
-    context = {}
-    return render(request, template, context)
-
-def feladat_6_post(request):
-    template = '22okt/feladat_6.html'
-    context = {}
+def feladat_6_valasz(request):
+    sorok = sorted(Kep.melyik_evben_hany_kep_keszult(), key=lambda sor: sor['ev'])
+    
+    template = '22okt/feladat_6_valasz.html'
+    context = {
+        'sorok': sorok,
+    }
+    
     return render(request, template, context)
