@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. feladat</title>
+    <link rel="stylesheet" href="{% static '22okt/css/feladat.css' %}">
+</head>
+<body>
+    A következő festők éltek a megadott {{ ev }} évben:
+    <table>
+        <tr>
+            <th>Név</th>
+            <th>Élt</th>
+        </tr>
+        {% for festo in festok %}
+        <tr>
+            <td>{{ festo.nev }}</td>
+            <td>{{ festo.szuletett }}-{{ festo.meghalt }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

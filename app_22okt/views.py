@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound, HttpResponseServerError
 from .models import Festo, Kep
 
@@ -39,3 +39,90 @@ def feltolt_post(request, tabla):
         ossz = Kep.objects.all().count()
     return HttpResponse(f'Sikerült a feltöltés a {tabla} táblába, {db} új adat jött létre. A többi már létezett korábban is. Így most {ossz} db adat van összesen.')
 
+def index(request):
+    return render(request, '22okt/index.html')
+
+def feladat_2_get(request):
+    template = '22okt/feladat_2_kerdes.html'
+
+    evszamok = [ festo.szuletett for festo in Festo.objects.all()] + [ festo.meghalt for festo in Festo.objects.all()]
+    ettol = min(evszamok)
+    eddig = max(evszamok)
+    context = {
+        'ettol': ettol,
+        'eddig': eddig,
+    }
+
+    return render(request, template, context)
+
+def feladat_2_post(request):
+    if request.method!='POST':
+        return redirect('/2022/okt/')
+    
+    try:
+        ev = int(request.POST['ev'])
+    except: 
+        return HttpResponseServerError('az év nem szám.')
+    
+    festok = [festo for festo in Festo.objects.all() if festo.szuletett <= ev and ev <= festo.meghalt]
+    template = '22okt/feladat_2_valasz.html'
+    context = {
+        'ev': ev,
+        'festok': festok,
+    }
+    return render(request, template, context)
+
+
+def feladat_3_get(request):
+    template = '22okt/feladat_3_kerdes.html'
+    technikak = {kep.technika for kep in Kep.objects.all()}
+    context = {
+        'technikak':technikak,
+    }
+    return render(request, template, context)
+
+def feladat_3_post(request):
+    if request.method!='POST':
+        return redirect('/2022/okt/')
+
+    a_technika = request.POST['technika']
+    anyagok = {kep.anyag for kep in Kep.objects.filter(technika=a_technika)}
+
+    template = '22okt/feladat_3_valasz.html'
+    context = {
+        'anyagok':anyagok,
+    }
+    return render(request, template, context)
+
+def feladat_4_get(request):
+    template = '22okt/feladat_4.html'
+    context = {}
+    return render(request, template, context)
+
+
+def feladat_5_get(request):
+    template = '22okt/feladat_5.html'
+    context = {}
+    return render(request, template, context)
+
+def feladat_6_get(request):
+    template = '22okt/feladat_6.html'
+    context = {}
+    return render(request, template, context)
+
+
+
+def feladat_4_post(request):
+    template = '22okt/feladat_4.html'
+    context = {}
+    return render(request, template, context)
+
+def feladat_5_post(request):
+    template = '22okt/feladat_5.html'
+    context = {}
+    return render(request, template, context)
+
+def feladat_6_post(request):
+    template = '22okt/feladat_6.html'
+    context = {}
+    return render(request, template, context)

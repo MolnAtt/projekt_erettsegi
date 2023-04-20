@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. feladat</title>
+    <link rel="stylesheet" href="{% static '22okt/css/feladat.css' %}">
+</head>
+<body>
+    <form action="post/" method="POST"> 
+        {% csrf_token %}
+        <label for="karaktersorozat">Írjon be egy karaktersorozatot a kereséshez!</label>
+        <input id="karaktersorozat" name="karaktersorozat" type="text">
+        <button type="submit">Küldés</button>
+    </form>
+</body>
+</html>
