@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound, HttpResponseServerError
+from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound, HttpResponseServerError, HttpResponseBadRequest
 from .models import Festo, Kep
 
 # a views.py-ban az áll, ahogy a szerver kommunikál a felhasználóval. 
@@ -43,11 +43,12 @@ def index(request):
     return render(request, '22okt/index.html')
 
 def feladat_2_get(request):
-    template = '22okt/feladat_2_kerdes.html'
 
     evszamok = [ festo.szuletett for festo in Festo.objects.all()] + [ festo.meghalt for festo in Festo.objects.all()]
     ettol = min(evszamok)
     eddig = max(evszamok)
+
+    template = '22okt/feladat_2_kerdes.html'
     context = {
         'ettol': ettol,
         'eddig': eddig,
@@ -62,8 +63,10 @@ def feladat_2_post(request):
     try:
         ev = int(request.POST['ev'])
     except: 
-        return HttpResponseServerError('az év nem szám.')
+        return HttpResponseBadRequest('az év nem szám.')
     
+    # -------------------------------------------------------
+
     festok = [festo for festo in Festo.objects.all() if festo.szuletett <= ev and ev <= festo.meghalt]
     template = '22okt/feladat_2_valasz.html'
     context = {
