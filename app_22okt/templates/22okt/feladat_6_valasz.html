@@ -10,17 +10,17 @@
 </head>
 <body>
     <p>
-        A következő festők éltek a megadott {{ ev }} évben:
+        A lista arról, hogy melyik évben hány kép készült:
     </p>
     <table>
         <tr>
-            <th>Név</th>
-            <th>Élt</th>
+            <th>év</th>
+            <th>db</th>
         </tr>
-        {% for festo in festok %}
+        {% for sor in sorok %}
         <tr>
-            <td>{{ festo.nev }}</td>
-            <td>{{ festo.szuletett }}-{{ festo.meghalt }}</td>
+            <td>{{ sor.ev }}</td>
+            <td>{{ sor.db }}</td>
         </tr>
         {% endfor %}
     </table>
