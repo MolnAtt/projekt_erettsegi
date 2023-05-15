@@ -16,6 +16,21 @@ class Kerulet(models.Model):
     def __str__(self):
         return self.szam + "(" + (self.nev if self.nev!=None else "") + ")"
     
+    def feltolt(inputcsv):
+        sorok = [ sor.strip() for sor in inputcsv.split('\n')]
+
+        for sor in sorok[1:]:
+            sortomb = sor.split('\t')
+            Kerulet.objects.get_or_create(
+                szam = sortomb[0],
+                nev = sortomb[1],
+                lakossag = int(sortomb[2]), # hibakezelés!
+                terulet = float(sortomb[3].replace(',','.')),# hibakezelés!
+            )
+
+        # errorokat még dolgozzuk ki hétfőn!!!! Visszajelzés, hogy mi sikerült, mennyit sikerült, stb.
+            
+
 class Varosresz(models.Model):
 
     azon = models.IntegerField()

@@ -1,0 +1,204 @@
+azon	nev	lakossag
+1	Adyliget	856
+2	Akadémiaújtelep	2895
+3	Albertfalva	11845
+4	Almáskert	
+5	Alsórákos	29023
+6	Angyalföld	62006
+7	Aquincum	761
+8	Aranyhegy-Ürömhegy-Péterhegy	
+9	Árpádföld	6186
+10	Baross Gábor-telep	3016
+11	Békásmegyer	38169
+12	Bélatelep	1285
+13	Belső-Ferencváros	
+14	Belsőmajor	1687
+15	Belváros	12244
+16	Bókaytelep	5093
+17	Budafok	26782
+18	Budakeszierdő	329
+19	Budaliget	2448
+20	Budatétény	10705
+21	Cinkota	6587
+22	Corvin-negyed	
+23	Csarnoknegyed	
+24	Csatárka	1666
+25	Csepel-Belváros	10461
+26	Csepel-Csillagtelep	18527
+27	Csepel-Erdőalja	3430
+28	Csepel-Erdősor	9992
+29	Csepel-Gyártelep	2403
+30	Csepel-Háros	1653
+31	Csepel-Kertváros	5745
+32	Csepel-Királyerdő	15917
+33	Csepel-Királymajor	3589
+34	Csepel-Ófalu	913
+35	Csepel-Rózsadomb	777
+36	Csepel-Szabótelep	7485
+37	Csepel-Szigetcsúcs	90
+38	Csillaghegy	10748
+39	Csillebérc	252
+40	Csúcshegy	410
+41	Dobogó	
+42	Erdőskert	1972
+43	Erzsébetfalva	36045
+44	Erzsébetliget	760
+45	Erzsébettelek	531
+46	Erzsébettelep	3565
+47	Erzsébetváros	62092
+48	Farkasrét	
+49	Farkasvölgy	1311
+50	Felhévíz	2298
+51	Felsőrákos	9283
+52	Ferihegy	706
+53	Ganzkertváros	2906
+54	Ganznegyed	
+55	Ganztelep	3745
+56	Gazdagrét	11929
+57	Gellérthegy	7197
+58	Gercse	112
+59	Gloriett-telep	6951
+60	Gubacs	1680
+61	Gubacsipuszta	10250
+62	Gyárdűlő	6968
+63	Halmierdő	41
+64	Hármashatárhegy	281
+65	Hársakalja	1524
+66	Harsánylejtő	
+67	Hárshegy	654
+68	Havanna-lakótelep	17337
+69	Herminamező	12264
+70	Hosszúrét	152
+71	Hűvösvölgy	1326
+72	Infopark	
+73	Istenhegy	4290
+74	Istvánmező	11794
+75	Istvántelek	1301
+76	Jánoshegy	405
+77	József Attila-lakótelep	15362
+78	Kamaraerdő	407
+79	Káposztásmegyer	23055
+80	Kaszásdűlő	8399
+81	Kelenföld	53332
+82	Kelenvölgy	3447
+83	Kerepesdűlő	4369
+84	Keresztúridűlő	2255
+85	Kispest	52349
+86	Kissvábhegy	3802
+87	Kiszugló	29292
+88	Kossuth Ferenc-telep	4334
+89	Kossuthfalva	3803
+90	Kőbánya-Kertváros	1888
+91	Kőérberek	282
+92	Kővár	26
+93	Középső-Ferencváros	
+94	Krepuska Géza-telep	2083
+95	Krisztinaváros	23689
+96	Kurucles	5247
+97	Kúttó	92
+98	Kútvölgy	5021
+99	Külső-Ferencváros	
+100	Lágymányos	19741
+101	Lakatos-lakótelep	6730
+102	Laposdűlő	7824
+103	Ligettelek	6134
+104	Lipótmező	412
+105	Lipótváros	16704
+106	Liptáktelep	3242
+107	Lónyaytelep	2501
+108	Losoncinegyed	
+109	Madárdomb	3595
+110	Madárhegy	22
+111	Magasút	635
+112	Magdolnanegyed	
+113	Margitsziget	1
+114	Máriaremete	4063
+115	Mártonhegy	3610
+116	Mátyásföld	19869
+117	Megyer	4733
+118	Miklóstelep	3064
+119	Millenniumtelep	669
+120	Mocsárosdűlő	1056
+121	Nádorkert	
+122	Nagytétény	12045
+123	Nagyzugló	11644
+124	Németvölgy	12983
+125	Népliget	37
+126	Népsziget	121
+127	Népszínháznegyed	
+128	Nyék	565
+129	Óbuda	33836
+130	Óbuda hegyvidéke	
+131	Óbudai-sziget	1
+132	Óhegy	28876
+133	Orbánhegy	6074
+134	Orczynegyed	
+135	Országút	11740
+136	Őrmező	7660
+137	Örsöd	902
+138	Pacsirtatelep	11756
+139	Palotanegyed	
+140	Pálvölgy	1644
+141	Pasarét	5519
+142	Pesthidegkút-Ófalu	1959
+143	Pestszentimre	
+144	Pestújhely	10571
+145	Péterhegy	715
+146	Petneházyrét	127
+147	Pösingermajor	523
+148	Rákoscsaba	13487
+149	Rákoscsaba-Újtelep	11029
+150	Rákosfalva	16281
+151	Rákoshegy	9799
+152	Rákoskeresztúr	26843
+153	Rákoskert	7639
+154	Rákosliget	3538
+155	Rákospalota	38402
+156	Rákosszentmihály	23098
+157	Régiakadémiatelep	1164
+158	Remetekertváros	2771
+159	Rendessytelep	1763
+160	Rézmál	1566
+161	Rómaifürdő	12681
+162	Rózsadomb	4892
+163	Sasad	14389
+164	Sashalom	15288
+165	Sashegy	4865
+166	Solymárvölgy	112
+167	Soroksár	13985
+168	Soroksár-Újtelep	6043
+169	Spanyolrét	
+170	Svábhegy	2474
+171	Szabótelep	1761
+172	Századosnegyed	
+173	Széchenyihegy	2756
+174	Székesdűlő	287
+175	Szemeretelep	7405
+176	Szemlőhegy	2753
+177	Szent Imre-kertváros	5471
+178	Szentimreváros	10914
+179	Szent Lőrinc-lakótelep	4310
+180	Széphalom	2891
+181	Szépilona	1003
+182	Szépvölgy	173
+183	Tabán	753
+184	Téglagyárdűlő	1031
+185	Terézváros	44137
+186	Tisztviselőtelep	3756
+187	Törökőr	15170
+188	Törökvész	13378
+189	Újhegy	16464
+190	Újlak	7041
+191	Újlipótváros	36347
+192	Újpalota	36259
+193	Újpest	74116
+194	Újpéteritelep	10162
+195	Vár	2518
+196	Városliget	113
+197	Vérhalom	4771
+198	Virányos	3902
+199	Vizafogó	15878
+200	Víziváros	16982
+201	Wekerletelep	11461
+202	Zöldmál	3726
+203	Zugliget	1364
