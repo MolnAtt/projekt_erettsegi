@@ -56,3 +56,16 @@ def feltoltes_varosresz(request):
     # context = {}
     # return render(request, template, context)
 
+
+def feltoltes_kapcsolat(request):
+    if request.method!='POST':
+        return HttpResponseNotAllowed('Nem gombra nyomva jutottál ide!')
+    
+    darab, error = Varosresz.feltolt_kapcsolat(request.POST['inputcsv'])
+
+    if error!=None:
+        return HttpResponseServerError(f'Hát sikerült {darab} db kapcsolatot létrehozni, de aztán történt egy kis probléma... '+ error)
+
+    return HttpResponse(f'Sikerült!! {darab} db új kapcsolat jött létre az adatbázisban.')
+
+
