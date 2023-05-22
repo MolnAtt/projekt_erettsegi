@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    A kerületek népsűrűségei csökkenő sorrendben:
+    <table>
+        <tr>
+            <th>Kerület római számmal</th>
+            <th>Kerület népsűrűségének értéke</th>
+        </tr>
+        {% for kerulet in keruletek %}
+        <tr>
+            <td>{{ kerulet.szam }}</td>
+            <td>{{ kerulet.nepsuruseg }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -16,6 +16,10 @@ class Kerulet(models.Model):
     def __str__(self):
         return self.szam + "(" + (self.nev if self.nev!=None else "") + ")"
     
+    @property
+    def nepsuruseg(self):
+        return self.lakossag/self.terulet
+
     def feltolt(inputcsv):
         sorok = [ sor.strip() for sor in inputcsv.strip().split('\n')]
         darab = 0
@@ -62,6 +66,10 @@ class Varosresz(models.Model):
         verbose_name = "Városrész"
         verbose_name_plural = "Városrészek"
 
+    @property
+    def keruletdb(self):
+        return self.kerulet.count()
+    
     def feltolt(inputcsv):
         sorok = [ sor for sor in inputcsv.replace('\r\n', '\n').strip().split('\n')]
         darab = 0
